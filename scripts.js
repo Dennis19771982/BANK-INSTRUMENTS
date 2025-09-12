@@ -11,12 +11,13 @@ document.getElementById("lead-form")
    // in real scenario, you would send this data to a server 
    console.log("Lead Capture:",{firstname,lastname,email});
 
-   //show configuration
+   // show configuration
    alert("Thank you for your interest! we will contact you shortly with our offers, procedures and requirements")
     
    // Reset form
    this.reset()
 })
+
 // show popup after 5 seconds
 
 setTimeout(function(){
@@ -35,3 +36,9 @@ if(e.target===this){
 }
 });
 
+
+// for Cash.html
+
+document.addEventListener("DOMContentLoaded", function(){
+   
+})
