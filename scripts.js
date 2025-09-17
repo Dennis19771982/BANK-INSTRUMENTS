@@ -36,9 +36,31 @@ if(e.target===this){
 }
 });
 
+   //=============================> cookies <=================================
 
-// for Cash.html
+function acceptCookies() {
+   document.getElementById("cookie-banner").style.display="none";
+   localStorage.setItem("cookiesAccepted", "true")
+   loadAnalytics();// GA4
+}
 
-document.addEventListener("DOMContentLoaded", function(){
-   
-})
+
+
+
+function declineCookies() {
+   document.getElementById("cookie-banner").style.display="none";
+   localStorage.setItem("cookiesAccepted", "false")
+   loadAnalytics();// GA4
+}
+
+// on page load, check past choice
+
+window.onload=function() {
+
+   if(this.localStorage.getItem("cookiesAccepted")==="true") {
+   loadAnalytics();
+   }else if (this.localStorage.getItem("cookiesAccepted")=="true") {
+      this.document.getElementById("cookies-banner").style.display="none";
+   }
+}
+
