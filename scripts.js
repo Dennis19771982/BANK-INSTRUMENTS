@@ -59,8 +59,9 @@ window.onload=function() {
 
    if(this.localStorage.getItem("cookiesAccepted")==="true") {
    loadAnalytics();
-   }else if (this.localStorage.getItem("cookiesAccepted")=="true") {
+   }else if (this.localStorage.getItem("cookiesAccepted")==="false") {
       this.document.getElementById("cookies-banner").style.display="none";
    }
 }
+
 
