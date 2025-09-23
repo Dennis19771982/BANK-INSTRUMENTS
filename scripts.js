@@ -50,7 +50,7 @@ function acceptCookies() {
 function declineCookies() {
    document.getElementById("cookie-banner").style.display="none";
    localStorage.setItem("cookiesAccepted", "false")
-   loadAnalytics();// GA4
+  
 }
 
 // on page load, check past choice
@@ -66,6 +66,7 @@ window.onload=function() {
       document.getElementById("cookies-banner").style.display="none";
    }
 }
+
 
 
 
