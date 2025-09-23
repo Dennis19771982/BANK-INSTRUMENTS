@@ -162,7 +162,7 @@ nav a:hover{
     gap: 1rem;
 }
 
-#lead-form input, #lead-form select{
+#lead-form input, #lead-form select {
     padding: 0.8rem;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -235,6 +235,7 @@ footer{
         align-items: center;
     }
 }
+
 
 
 
