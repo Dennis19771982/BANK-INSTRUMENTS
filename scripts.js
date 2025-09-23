@@ -59,9 +59,13 @@ window.onload=function() {
 
    if(this.localStorage.getItem("cookiesAccepted")==="true") {
    loadAnalytics();
+      document.getElimentById("cookie-banner").style.display="none";
+
+      
    }else if (this.localStorage.getItem("cookiesAccepted")==="false") {
-      this.document.getElementById("cookies-banner").style.display="none";
+      document.getElementById("cookies-banner").style.display="none";
    }
 }
+
 
 
